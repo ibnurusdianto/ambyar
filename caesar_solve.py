@@ -20,7 +20,7 @@ def decrypt_file(filename, shift):
     with open(filename, 'r') as f:
         text = f.read()
     decrypted = caesar_decrypt(text, shift)
-    with open(filename[:-4], 'w') as f:  # Remove '.enc' extension
+    with open(filename[:-4], 'w') as f: 
         f.write(decrypted)
 
 while True:
