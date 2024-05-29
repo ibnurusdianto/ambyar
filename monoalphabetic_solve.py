@@ -25,7 +25,7 @@ def decrypt_file(filename, key):
     with open(filename, 'r') as f:
         text = f.read()
     decrypted = monoalphabetic_decrypt(text, key)
-    with open(filename[:-4], 'w') as f:  # Remove '.enc' extension
+    with open(filename[:-4], 'w') as f:
         f.write(decrypted)
 while True:
     print("\n===== Monoalphabetic Cipher =====")
